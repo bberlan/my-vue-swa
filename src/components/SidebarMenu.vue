@@ -15,16 +15,13 @@ const items = ref<NavigationMenuItem[][]>([
       children: [
         {
           label: 'Cars',
-          description: 'Use NuxtLink with superpowers.',
         },
         {
           label: 'Persons',
-          description: 'Display a modal within your application.',
         },
         {
           label: 'Countries',
-          description: 'Display a non-modal dialog that floats around a trigger element.',
-          onSelect: () => store.addItem({ label: 'Countries' } as TabsItem),
+          onSelect: () => store.addItem({ label: 'Countries', value: 'tab3' } as TabsItem),
         },
       ],
     },

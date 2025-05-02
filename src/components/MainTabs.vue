@@ -17,7 +17,7 @@ const store = useTabsStore()
 </script>
 
 <template>
-  <UTabs :items="store.items" color="neutral" variant="link" class="flex-1">
+  <UTabs v-model="store.active" :items="store.items" color="neutral" variant="link" class="flex-1">
     <template #content="{ item }">
       <p>This is the {{ item.label }}.</p>
     </template>
